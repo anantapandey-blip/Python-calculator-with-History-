@@ -1,0 +1,37 @@
+1. start the program 
+
+2. DEFINE the name of the history file
+
+3 loop forever (while true):
+  a. ask the user to enter a calculation (e.g 2 + 3)
+    or a command (history,clear,exit)
+
+  b. if the user enters "exit":
+      1. print a goodbye message
+      2. break the loop
+
+  c. if user enters "history":
+      1. try to open the history file for reading
+      2. if the file exists print the each line
+      3. if file doesn't exist or is empty , print "no history found"
+      4.  continue to the next loop
+
+  d. if the user "clear":
+     1. open the history file and overwrite it with nothing (empty it)
+     2. print "history cleared"
+     3. continue to the next loop
+
+  e. Otheriwse (assume  user entered a calculation):
+   1. try to parse the input to get the number and the operator
+   2. if the input is not valid , print "invalid input" and continue
+   3. perform the calculation using if/elif:
+    - if +,add
+    - if -, subtarct
+    - if *, multiply
+    - if /, divide (and check for divide by zero)
+   
+   
+    4. show the result
+
+  f. end the program
+
